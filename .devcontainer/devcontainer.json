@@ -1,0 +1,33 @@
+{
+	"name": "Market Data Insights",
+	"image": "mcr.microsoft.com/devcontainers/go:1-1.23-bookworm",
+	"features": {
+		"ghcr.io/devcontainers/features/git:1": {},
+		"ghcr.io/devcontainers/features/github-cli:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"golang.go",
+				"ms-vscode.vscode-json",
+				"bradlc.vscode-tailwindcss",
+				"esbenp.prettier-vscode"
+			],
+			"settings": {
+				"go.toolsManagement.checkForUpdates": "local",
+				"go.useLanguageServer": true,
+				"go.gopath": "/go",
+				"go.goroot": "/usr/local/go"
+			}
+		}
+	},
+	"forwardPorts": [8080],
+	"portsAttributes": {
+		"8080": {
+			"label": "Web Server",
+			"onAutoForward": "notify"
+		}
+	},
+	"postCreateCommand": "go mod download",
+	"remoteUser": "vscode"
+}

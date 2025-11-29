@@ -1,0 +1,6 @@
+server:
+  port: 8080
+  host: "localhost"
+
+api:
+  massive_api_key: "your_massive_api_key_here"
