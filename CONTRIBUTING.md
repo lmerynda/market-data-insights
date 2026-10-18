@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-- Go 1.23.8 or later
+- Go 1.26 or later
 
 ## Run Locally
 
