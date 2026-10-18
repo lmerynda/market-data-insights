@@ -4,6 +4,8 @@ A Go web application for market data analytics, based on the market-watch-go pro
 
 ## Quick Start
 
+Requires Go 1.26 or later.
+
 ```bash
 go run main.go
 ```
